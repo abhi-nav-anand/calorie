@@ -1,0 +1,115 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Login Page Container */
+  .login-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 100vh;              /* Full viewport height */
+    background-color: #f7f9fc; /* Light background color */
+  }
+  
+  /* Login Form Styling */
+  .login-form {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;          /* Maximum width increased to make it larger */
+  }
+  
+  /* Heading Styling */
+  .login-heading {
+    text-align: center;
+    font-size: 32px;           /* Larger heading */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;       /* More space between heading and form fields */
+  }
+  
+  /* Input Field Group */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input Field Styling */
+  .input-field {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;           /* Larger font size for input */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  /* Focus effect for input fields */
+  .input-field:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Submit Button Styling */
+  .login-btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;           /* Larger font size for the button */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .login-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add styles for the signup redirect text */
+  .signup-redirect {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .signup-link {
+    color: #4caf50;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .signup-link:hover {
+    color: #45a049;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .login-heading {
+      font-size: 28px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .login-btn {
+      font-size: 16px;
+    }
+  }
+  

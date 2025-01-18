@@ -1,0 +1,147 @@
+/* Ensure the body and html take up full screen */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  overflow-x: hidden;  /* Prevent horizontal overflow */
+}
+
+/* Container to take full screen space */
+.food-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;  /* Take the full screen height */
+  padding: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  overflow-y: auto;  /* Allow vertical scrolling if needed */
+}
+
+/* Heading */
+.food-list-heading {
+  font-size: 3.5rem; /* Increased font size */
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Flexbox to make food items fill available space */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Set grid to 5 columns */
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Individual food card styles */
+.food-item-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;  /* Increased width for larger cards */
+  padding: 10px; /* Add some padding to the card */
+}
+
+.food-item-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image for food item */
+.food-image {
+  width: 100%;
+  height: 220px;  /* Increased height for images */
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Food details */
+.food-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.food-name {
+  font-size: 1.8em; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.food-category {
+  font-size: 1.3em; /* Increased font size */
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.food-calories {
+  font-size: 1.5em; /* Increased font size */
+  color: #ff6347;
+  font-weight: bold;
+}
+
+/* Button styling */
+.go-to-selection-btn {
+  margin-top: 30px;
+  padding: 14px 35px;  /* Increased padding */
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3em;  /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-selection-btn:hover {
+  background-color: #e5533d;
+}
+
+/* Responsive design */
+
+/* Tablets and Laptops */
+@media (max-width: 1024px) {
+  .food-grid {
+      grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for smaller screens */
+  }
+
+  .food-name {
+      font-size: 1.6em; /* Increased font size */
+  }
+
+  .food-calories {
+      font-size: 1.4em; /* Increased font size */
+  }
+
+  .go-to-selection-btn {
+      font-size: 1.2em; /* Increased font size */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .food-grid {
+      grid-template-columns: 1fr; /* Stack items in one column on mobile */
+  }
+
+  .food-name {
+      font-size: 1.4em; /* Increased font size */
+  }
+
+  .food-calories {
+      font-size: 1.2em; /* Increased font size */
+  }
+
+  .go-to-selection-btn {
+      font-size: 1.1em; /* Increased font size */
+  }
+}

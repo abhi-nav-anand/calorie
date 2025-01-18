@@ -1,0 +1,181 @@
+/* General Reset for margin and padding */
+*{
+  
+}
+body, html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  place-items:unset!important;
+}
+
+/* Container for the entire Food Selection page */
+.food-selection-container {
+  /* margin-top: 1500px; */
+  max-width: 100%;
+  width: 100vw;
+  height: auto;
+  /* min-height: 100vh; */
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Grid layout for food items */
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Food card styling */
+.food-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Apply this style only to the selected food card */
+.food-card.selected {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Image styling for food item */
+.food-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Food name and calories styling */
+.food-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.food-calories {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Quantity controls below each food card */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.quantity-btn:hover {
+  background-color: #45a049;
+}
+
+.quantity {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Selected Food Section */
+.selected-food-section {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.selected-food-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.selected-food-item {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Total calories */
+.total-calories {
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Button to generate QR code */
+.generate-qr-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.generate-qr-btn:hover {
+  background-color: #e64a19;
+}
+
+/* QR Code Section */
+.qr-code-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.qr-code-img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
