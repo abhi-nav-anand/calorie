@@ -8,6 +8,7 @@ import FoodSelection from './components/FoodSelection';
 import About from './components/About'; // Import the About page
 import Services from './components/services';
 import Contact from './components/contact';
+import DishForm from './components/DishForm';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} /> {/* Add the About route */}
         <Route path="/services" element={<Services/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/dish-form" element={<DishForm />} />
       </Routes>
     </Router>
   );

@@ -29,6 +29,11 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/dish-form" activeClassName="active-link">
+            DishForm
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" activeClassName="active-link">
             Contact
           </NavLink>
